@@ -1,5 +1,8 @@
-import { createCanvas } from 'canvas';
+import { createCanvas, registerFont } from 'canvas';
 import type { APIRoute } from 'astro';
+
+// Register the font
+registerFont('./public/fonts/Roboto-Bold.ttf', { family: 'Roboto', weight: 'bold' });
 
 export const GET: APIRoute = async ({ params }) => {
   // Get route parameters
@@ -15,7 +18,7 @@ export const GET: APIRoute = async ({ params }) => {
 
   // Set text style
   ctx.fillStyle = 'black';
-  ctx.font = 'bold 80px Arial';
+  ctx.font = 'bold 80px Roboto';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
 
