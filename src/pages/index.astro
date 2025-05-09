@@ -1,7 +1,20 @@
 ---
 import Layout from '@components/layouts/Layout.astro';
+import DeployForm from '@components/DeployForm';
 ---
 
-<Layout title="Home">
-  <h1>Astro</h1>
+<Layout title="Dynamic Deploy to Netlify Button">
+  <main class="min-h-screen p-8 flex flex-col items-center justify-center">
+    <div class="max-w-2xl w-full space-y-8">
+      <div class="text-center space-y-4">
+        <h1 class="text-4xl font-bold tracking-tight">Dynamic Deploy to Netlify Button</h1>
+        <p class="text-lg text-gray-600">
+          Generate a custom Deploy to Netlify button for your GitHub repository. Simply enter your
+          repository details below to get started.
+        </p>
+      </div>
+
+      <DeployForm client:load />
+    </div>
+  </main>
 </Layout>
