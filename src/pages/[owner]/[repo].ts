@@ -2,7 +2,7 @@ import { createCanvas, registerFont } from 'canvas';
 import type { APIRoute } from 'astro';
 
 // Register the font
-registerFont('./public/fonts/Roboto-Bold.ttf', { family: 'Roboto', weight: 'bold' });
+registerFont('./src/fonts/Roboto-Bold.ttf', { family: 'Roboto', weight: 'bold' });
 
 export const GET: APIRoute = async ({ params }) => {
   // Get route parameters
