@@ -1,2 +1,2 @@
 [functions]
-included_files = ["public/fonts/Roboto-Bold.ttf"]
+included_files = ["./src/fonts/Roboto-Bold.ttf"]
