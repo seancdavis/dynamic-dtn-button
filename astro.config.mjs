@@ -13,6 +13,8 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   output: 'server',
-  adapter: netlify(),
+  adapter: netlify({
+    includeFiles: ['./src/fonts/Roboto-Bold.ttf'],
+  }),
   integrations: [react()],
 });
